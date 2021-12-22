@@ -1,5 +1,5 @@
 ## Installation
-Execute the following to install myndotfiles to your $HOME directory:
+Execute the following to install my dotfiles to your $HOME directory:
 ```
 curl -Lks https://raw.githubusercontent.com/lpaube/.dotfiles/main/.install-config.sh \
 | /bin/bash
