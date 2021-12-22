@@ -12,7 +12,7 @@ config config --local status.showUntrackedFiles no
 
 #Creating backup dotfiles directory
 mkdir -p .config-backup && config checkout 2>&1 \
-| egrep "\s+\." | awk {'print $1'} | \
+| egrep "\s+" | awk {'print $1'} | \
 xargs -I{} mv {} .config-backup/{}
 
 #Get the dotfiles and self-destruct
