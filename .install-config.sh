@@ -17,3 +17,4 @@ xargs -I{} mv {} .config-backup/{}
 
 #Get the dotfiles and self-destruct
 config checkout
+rm -rf $HOME/README.md $HOME/.install-config.sh
