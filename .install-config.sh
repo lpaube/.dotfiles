@@ -1,11 +1,11 @@
-git clone --bare git@github.com:lpaube/.dotfiles.git $HOME/.cfg
+#Creating alias and put in .bashrc
+echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'" >> $HOME/.bashrc
 
 function config {
 	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
-#Creating alias and put in .bashrc
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'" >> $HOME/.bashrc
+git clone --bare git@github.com:lpaube/.dotfiles.git $HOME/.cfg
 
 #Config git to not show unnecessary files
 config config --local status.showUntrackedFiles no
