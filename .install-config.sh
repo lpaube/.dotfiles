@@ -1,5 +1,6 @@
 #Creating alias and put in .bashrc
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME'" >> $HOME/.bashrc
+source $HOME/.bashrc
 
 function config {
 	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
