@@ -12,10 +12,10 @@ git clone --bare git@github.com:lpaube/.dotfiles.git $HOME/.cfg
 config config --local status.showUntrackedFiles no
 
 #Creating backup dotfiles directory
-mkdir -p .config-backup && config checkout 2>&1 \
+mkdir -p $HOME/.config-backup && config checkout 2>&1 \
 | egrep "\s+" | sed -n '1!p' | sed -n '$!p' | awk {'print $1'} | \
-xargs -I{} mv {} .config-backup/{}
+xargs -I{} mv {} $HOME/.config-backup/{}
 
 #Get the dotfiles and self-destruct
 config checkout
-#rm -rf $HOME/README.md $HOME/.install-config.sh
+#rm -rf $HOME/README.md
