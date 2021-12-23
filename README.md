@@ -1,7 +1,7 @@
 ## Installation
 Execute the following to install my dotfiles to your $HOME directory:
 ```
-curl -Lks https://tinyurl.com/lpaubedotfiles | /bin/bash
+curl -Lks https://tinyurl.com/2p88vfk4 | /bin/bash
 ```
 
 ## How to Use
