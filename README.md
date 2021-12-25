@@ -1,5 +1,5 @@
 ## Installation
-Execute the following to install my dotfiles to your $HOME directory:
+Execute the following to install the dotfiles to your $HOME directory:
 
 **Linux:**
 ```
