@@ -1,3 +1,14 @@
+export USER=laube
+export MAIL=laube@student.42quebec.com
+
+alias config='/usr/bin/git --git-dir=/$HOME/.myconf/ --work-tree=$HOME'
+alias vim=/usr/bin/vim
+export PATH=${PATH}:/home/laube/.local/bin
+
+#xmodmap ~/.xmodmaprc
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
@@ -46,6 +57,3 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]\w\[\e[m\]\[\e[35m\]\`parse_git_branch\`\[\e[m\] "
-alias ctags='/usr/local/bin/ctags'
-
-alias config='/usr/bin/git --git-dir=/Users/laube/.cfg --work-tree=/Users/laube'
