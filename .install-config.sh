@@ -6,7 +6,7 @@ function config {
 	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
 
-git clone --bare git@github.com:lpaube/.dotfiles.git $HOME/.cfg
+git clone --bare --branch linux git@github.com:lpaube/.dotfiles.git $HOME/.cfg
 
 #Config git to not show unnecessary files
 config config --local status.showUntrackedFiles no
