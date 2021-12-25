@@ -1,5 +1,12 @@
 ## Installation
 Execute the following to install my dotfiles to your $HOME directory:
+
+**Linux:**
+```
+curl -Lks https://tinyurl.com/dotlinux | /bin/bash
+```
+
+**Generic:**
 ```
 curl -Lks https://tinyurl.com/2p88vfk4 | /bin/bash
 ```
