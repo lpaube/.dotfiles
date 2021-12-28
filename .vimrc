@@ -8,6 +8,7 @@ endif
 "Vim-plug plugins
 call plug#begin('~/.vim/plugged')
     Plug 'gruvbox-community/gruvbox'
+    Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "Generic settings
