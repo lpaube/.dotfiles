@@ -23,11 +23,11 @@ set hlsearch
 set showcmd "To see number of cols or rows
 set wildmenu
     
-set tabstop=8
 set noexpandtab
-set softtabstop=4
+set tabstop=4
 set shiftwidth=4
 set autoindent
+"set softtabstop=4
 filetype plugin indent on
 set hidden "Allows unsaved buffer to not be shown in window
 set foldmethod=syntax
