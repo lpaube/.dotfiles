@@ -30,6 +30,7 @@ set shiftwidth=4
 set autoindent
 filetype plugin indent on
 set hidden "Allows unsaved buffer to not be shown in window
+set foldmethod=syntax
 
 "Colors
 set termguicolors
