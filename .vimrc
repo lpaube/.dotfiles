@@ -24,7 +24,7 @@ set showcmd "To see number of cols or rows
 set wildmenu
     
 set tabstop=8
-set expandtab
+set noexpandtab
 set softtabstop=4
 set shiftwidth=4
 set autoindent
