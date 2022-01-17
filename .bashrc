@@ -2,7 +2,6 @@ export USER=laube
 export MAIL=laube@student.42quebec.com
 
 alias config='/usr/bin/git --git-dir=/$HOME/.cfg/ --work-tree=$HOME'
-alias vim=/usr/bin/vim
 export PATH=${PATH}:/home/laube/.local/bin
 
 #xmodmap ~/.xmodmaprc
