@@ -9,6 +9,7 @@ endif
 call plug#begin('~/.vim/plugged')
     Plug 'gruvbox-community/gruvbox'
     Plug 'vimwiki/vimwiki'
+	Plug 'stsewd/gx-extended.vim'
 call plug#end()
 
 "Generic settings
