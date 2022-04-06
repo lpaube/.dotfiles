@@ -21,6 +21,7 @@ mkdir -p $HOME/.config-backup/.config
 mkdir -p $HOME/.config-backup/.config/i3
 mkdir -p $HOME/.config-backup/.config/nvim
 mkdir -p $HOME/.config-backup/.config/nvim/lua
+mkdir -p $HOME/.config-backup/.config/nvim/lua/plugin
 mkdir -p $HOME/.config-backup/.config/nvim/lua/user
 
 config checkout 2>&1 | egrep "\s+" | sed -n '1!p' | sed -n '$!p' | awk {'print $1'} | \
