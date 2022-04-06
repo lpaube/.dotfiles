@@ -27,3 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 xmodmap ~/.xmodmaprc
+. "$HOME/.cargo/env"
