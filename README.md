@@ -13,7 +13,7 @@ curl -Lks https://tinyurl.com/2p88vfk4 | /bin/bash
 
 **Test:**
 ```
-curl -Lks https://tinyurl.com/dottesting
+curl -Lks https://tinyurl.com/dottesting | /bin/bash
 ```
 
 ## How to Use
