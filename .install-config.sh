@@ -20,6 +20,8 @@ mkdir -p $HOME/.config-backup
 mkdir -p $HOME/.config-backup/.config
 mkdir -p $HOME/.config-backup/.config/i3
 mkdir -p $HOME/.config-backup/.config/nvim
+mkdir -p $HOME/.config-backup/.config/nvim/lua
+mkdir -p $HOME/.config-backup/.config/nvim/lua/user
 
 config checkout 2>&1 | egrep "\s+" | sed -n '1!p' | sed -n '$!p' | awk {'print $1'} | \
 	xargs -I% mv $HOME/% $HOME/.config-backup/%
