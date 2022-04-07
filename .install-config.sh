@@ -23,6 +23,8 @@ mkdir -p $HOME/.config-backup/.config/nvim
 mkdir -p $HOME/.config-backup/.config/nvim/lua
 mkdir -p $HOME/.config-backup/.config/nvim/lua/plugin
 mkdir -p $HOME/.config-backup/.config/nvim/lua/user
+mkdir -p $HOME/.config-backup/.config/nvim/lua/user/lsp
+mkdir -p $HOME/.config-backup/.config/nvim/lua/user/lsp/settings
 
 config checkout 2>&1 | egrep "\s+" | sed -n '1!p' | sed -n '$!p' | awk {'print $1'} | \
 	xargs -I% mv $HOME/% $HOME/.config-backup/%
