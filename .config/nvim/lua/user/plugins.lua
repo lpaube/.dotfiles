@@ -59,6 +59,8 @@ return require("packer").startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "williamboman/nvim-lsp-installer"
 
+  use "liuchengxu/vista.vim"
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
