@@ -29,3 +29,8 @@ config checkout 2>&1 | egrep "\s+" | sed -n '1!p' | sed -n '$!p' | awk {'print $
 
 #Get the dotfiles and self-destruct
 config checkout
+
+
+#Download and install fonts
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLo "Hack Regular Nerd Font Complete.ttf" https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
