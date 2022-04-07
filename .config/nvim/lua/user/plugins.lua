@@ -13,6 +13,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 		vim.cmd [[packadd packer.nvim]]
 end
 
+-- Auto sync Packer when saving this file
 vim.cmd [[
   augroup packer_user_config
     autocmd!
@@ -35,8 +36,7 @@ packer.init {
 
 return require("packer").startup(function(use)
 	use "wbthomason/packer.nvim"
-	--use "nvim-lua/plenary.nvim"
-	--use "nvim-lua/popup.nvim"
+	use "justinmk/vim-dirvish"
 
 	-- Color Schemes
 	use "lunarvim/colorschemes"
@@ -48,11 +48,16 @@ return require("packer").startup(function(use)
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-path"
 	use "hrsh7th/cmp-cmdline"
+	use "hrsh7th/cmp-nvim-lsp"
 	use "saadparwaiz1/cmp_luasnip"
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip" 
 	use "rafamadriz/friendly-snippets"
+
+	-- LSP plugins
+	use "neovim/nvim-lspconfig"
+	use "williamboman/nvim-lsp-installer"
 
 	if packer_bootstrap then
 		require("packer").sync()
