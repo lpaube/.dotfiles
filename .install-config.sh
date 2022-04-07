@@ -20,8 +20,8 @@ mkdir -p $HOME/.config-backup
 mkdir -p $HOME/.config-backup/.config
 mkdir -p $HOME/.config-backup/.config/i3
 mkdir -p $HOME/.config-backup/.config/nvim
+mkdir -p $HOME/.config-backup/.config/nvim/plugin
 mkdir -p $HOME/.config-backup/.config/nvim/lua
-mkdir -p $HOME/.config-backup/.config/nvim/lua/plugin
 mkdir -p $HOME/.config-backup/.config/nvim/lua/user
 mkdir -p $HOME/.config-backup/.config/nvim/lua/user/lsp
 mkdir -p $HOME/.config-backup/.config/nvim/lua/user/lsp/settings
