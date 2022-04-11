@@ -37,11 +37,14 @@ packer.init {
 return require("packer").startup(function(use)
 	use "wbthomason/packer.nvim"
 	use "justinmk/vim-dirvish"
+  use "iamcco/markdown-preview.nvim"
 
 	-- Color Schemes
 	use "lunarvim/colorschemes"
 	use "dracula/vim"
 	use "morhetz/gruvbox"
+  use "lifepillar/vim-gruvbox8"
+  use "folke/tokyonight.nvim"
 
 	-- Complete plugins
 	use "hrsh7th/nvim-cmp"
