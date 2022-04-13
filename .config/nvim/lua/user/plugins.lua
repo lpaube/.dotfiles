@@ -35,24 +35,26 @@ packer.init {
 }
 
 return require("packer").startup(function(use)
-	use "wbthomason/packer.nvim"
-	use "justinmk/vim-dirvish"
-  use "iamcco/markdown-preview.nvim"
+    use "wbthomason/packer.nvim"
+    use "justinmk/vim-dirvish"
+    use "iamcco/markdown-preview.nvim"
+    use "psliwka/vim-smoothie"
+    use "nvim-treesitter/nvim-treesitter"
 
-	-- Color Schemes
-	use "lunarvim/colorschemes"
-	use "dracula/vim"
-	use "morhetz/gruvbox"
-  use "lifepillar/vim-gruvbox8"
-  use "folke/tokyonight.nvim"
+    -- Color Schemes
+    use "lunarvim/colorschemes"
+    use "dracula/vim"
+    use "morhetz/gruvbox"
+    use "lifepillar/vim-gruvbox8"
+    use "folke/tokyonight.nvim"
 
-	-- Complete plugins
-	use "hrsh7th/nvim-cmp"
-	use "hrsh7th/cmp-buffer"
-	use "hrsh7th/cmp-path"
-	use "hrsh7th/cmp-cmdline"
-	use "hrsh7th/cmp-nvim-lsp"
-	use "saadparwaiz1/cmp_luasnip"
+    -- Complete plugins
+    use "hrsh7th/nvim-cmp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "hrsh7th/cmp-nvim-lsp"
+    use "saadparwaiz1/cmp_luasnip"
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip" 
