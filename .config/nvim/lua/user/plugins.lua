@@ -7,10 +7,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 		"clone",
 		"--depth", 
 		"1", 
-		"https://github.com/wbthomason/packer.nvim", 
+		"https://github.com/wbthomason/packer.nvim",
 		install_path})
 		print "Installing packer; close and reopen Neovim..."
-		vim.cmd [[packadd packer.nvim]]
+		vim.cmd [[
+        packadd packer.nvim
+        ]]
 end
 
 -- Auto sync Packer when saving this file
@@ -40,6 +42,7 @@ return require("packer").startup(function(use)
     use "iamcco/markdown-preview.nvim"
     use "psliwka/vim-smoothie"
     use "nvim-treesitter/nvim-treesitter"
+    use "mfussenegger/nvim-dap"
 
     -- Color Schemes
     use "lunarvim/colorschemes"
@@ -47,6 +50,7 @@ return require("packer").startup(function(use)
     use "morhetz/gruvbox"
     use "lifepillar/vim-gruvbox8"
     use "folke/tokyonight.nvim"
+    use "projekt0n/github-nvim-theme"
 
     -- Complete plugins
     use "hrsh7th/nvim-cmp"
