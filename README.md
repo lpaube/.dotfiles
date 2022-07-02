@@ -11,6 +11,11 @@ curl -Lks https://tinyurl.com/dotlinux | /bin/bash
 curl -Lks https://tinyurl.com/2p88vfk4 | /bin/bash
 ```
 
+**Test:**
+```
+curl -Lks https://tinyurl.com/dottesting | /bin/bash
+```
+
 ## How to Use
 The alias ``config`` is used as a replacement to ``git``.
 
