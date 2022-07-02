@@ -36,6 +36,13 @@ packer.init {
 	}
 }
 
+-- Color column by indentation
+require("indent_blankline").setup {
+  sapce_char_blankline = " ",
+  show_current_context = true,
+  show_current_context_start = true,
+}
+
 return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
     use "justinmk/vim-dirvish"
@@ -69,9 +76,11 @@ return require("packer").startup(function(use)
 	use "williamboman/nvim-lsp-installer"
 
   use "liuchengxu/vista.vim"
+  use "lukas-reineke/indent-blankline.nvim"
 
 	if packer_bootstrap then
 		require("packer").sync()
 	end
 end)
+
 

@@ -3,7 +3,7 @@ vim.opt.number = true
 vim.opt.wrap = false
 vim.opt.syntax = "enable"
 vim.opt.foldmethod = "syntax"
-vim.opt.wildmode = "list"
+vim.opt.wildmode = "list:longest"
 
 vim.opt.cursorline = true
 --vim.opt.cursorlineopt = "number"
